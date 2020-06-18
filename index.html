@@ -112,19 +112,45 @@
         </div>
        
       <h3 class="data">Оставьте свои данные, мы вам перезвоним</h3>
-    <form>
-      <label for="name"><input class="vvod padlo" type="text" name="name" placeholder="введите имя" /></label>
+    <form class="form" autocomplete="off">
+      <label class="form-field"><input type="text" class="form-input" name="name" placeholder=" " />
+        <span class="form-label">Имя</span>
+        <span >
+          <svg class="icon">
+            <use href="./img/spirt.svg#name"></use>
+          </svg>
+        </span>
+      </label>
       
-      <label for="tel"> <input class="vvod padlo" type="tel" name="Телефон" placeholder="введите телефон" /></label>
+      <label class="form-field"><input type="tel" class="form-input" name="Телефон" placeholder=" " />
+        <span class="form-label">Телефон</span>
+        <span >
+          <svg class="icon">
+            <use href="./img/spirt.svg#tele"></use>
+          </svg>
+        </span>
+      </label>
      
-      <label for="mail"><input class="vvod padlo" type="mail" name="Почта" placeholder="введите почту" /></label>
-      
+      <label class="form-field"><input type="mail" class="form-input" name="Почта" placeholder=" " />
+      <span class="form-label">Почта</span>
+      <span >
+        <svg class="icon">
+          <use href="./img/spirt.svg#mail"></use>
+        </svg>
+      </span>
+      </label>
+
       <textarea class="padlo" name="comment"
         rows="5"
         cols="45"
         placeholder="Комментарий"></textarea>
-        <input class="in" type="checkbox" name="topic" value="html" id="html" /> <label for="html" class="lc">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label> 
-       <div> <button class="buttoni" type="submit">Отправить</a></div>
+
+        <label class="field">
+        <input class="checkbox" type="checkbox" name="topic" value="html" />
+        <span class="iconi"></span> 
+        <span class="lable">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span></label> 
+       <div> <button class="buttoni" type="submit">Отправить</a></label>
+      </div>
      </form> 
     </div>
   </div> 
