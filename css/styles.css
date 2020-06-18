@@ -448,9 +448,7 @@ border-radius: 50%;
   display: block;
  
 }
-plsceholder{
-  padding-left: 42px;
-}
+
 .form-label {
   position: absolute;
   top: 30%;
@@ -485,21 +483,23 @@ margin-left: 40px;
   /* resize: none; */
 }
 .form-field:focus-within > .icon {
- border: 1px solid #2196F3;
-  
-  border-radius: 4px;
+ 
+ 
   --color:#2196F3;
 }
-
+input{
+  border: transparent;
+}
 .form-field:focus-within > .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translate(-26px,-40px);
-  
-  border-radius: 4px;
   color:#2196F3;
-  --color:#2196F3;
+   border-color: #2196F3;
 }
-.icon:focus-within{
+input:focus:valid{
+ border-color: #2196F3;
+}
+.icon:hower{
   --color:#2196F3;
 }
 .padlo{
