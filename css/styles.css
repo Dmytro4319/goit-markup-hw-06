@@ -485,7 +485,7 @@ margin-left: 40px;
 .form-field:focus-within > .icon {
  
  
-  --color:#2196F3;
+  fill:#2196F3;
 }
 input{
   border: transparent;
@@ -495,12 +495,16 @@ input{
   transform: translate(-26px,-40px);
   color:#2196F3;
    border-color: #2196F3;
+   fill:#2196F3;
 }
-input:focus:valid{
+input:focus{
  border-color: #2196F3;
 }
-.icon:hower{
-  --color:#2196F3;
+.icon:focus-within + .ico{
+  fill:#2196F3;
+}
+.ico{
+  fill:#212121;
 }
 .padlo{
   margin-left: 40px;
